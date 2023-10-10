@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("resources/login.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .login-header{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #d6edd0;
+            border-radius: 5px;
+            border: 1px solid rgb(164, 164, 160);
+            
+        }
+        .login
+        {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 15px;
+            margin-top: px;
+        }
+        .text{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: start;
+            word-wrap: break-word;
+            overflow: hidden;
+        }
+        .inp{
+            width: 50%;
+        }
+        input{
+            width: 80%;
+        }
+        @media(max-width:990px){
+            .login-header{
+                width: 50%;
+            }
+            input{
+                width: 80%;
+                height: auto;
+            }
+        }
+        @media(max-width:700px){
+            .login-header{
+                width: 70%;
+            }
+            input{
+                width: 80%;
+                height: auto;
+            }
+        }
+        @media(max-width:480px){
+            .login-header{
+                width: 80%;
+            }
+            input{
+                width: 80%;
+                height: auto;
+            }
+        }
+        @media(max-width:300px){
+            .login-header{
+                width: 90%;
+            }
+            input{
+                width: 80%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="login-header">
+            <div class="header">
+                <br>
+                <h3>Login</h3>
+                <br>
+            </div>
+            <div class="login">
+                <div class="text">
+                    <label for="userid">User Id</label>
+                    <br>
+                    <label for="pass">Password</label>
+                    <br>
+                    <input type="submit">
+                </div>
+               <div class="inp">
+                    <input type="text" id="userid">
+                   
+                    <br>
+                    <br>
+                    <input type="password" id="pass">
+                    <br>
+                    <br>
+                    <input type="reset" id="pass">
+               </div>
+               
+            </div>
+            <div class="create-accout">
+                <br>
+                <h4><a style="text-decoration: none;" href="computer.html">Create account ?</a></h4>
+                <br>
+             
+                <h4><a style="text-decoration: none;" href="computer.html">Forget Password</a></h4>
+                <br>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
